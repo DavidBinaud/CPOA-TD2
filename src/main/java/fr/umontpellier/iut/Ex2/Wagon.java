@@ -26,4 +26,8 @@ public class Wagon {
     public int getPoids() {
         return poids;
     }
+
+    public int getDistance(){
+        return GestionDistances.getDistances(destination);
+    }
 }
