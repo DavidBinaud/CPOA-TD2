@@ -14,9 +14,9 @@ public class AppTransports {
 
         Tarif tariffixe = new TarifFixe(1000);
 
-        Tarif tarifpoids = new TarifPoids(15);
+        TarifPoids tarifpoids = new TarifPoids(15);
 
-        Tarif tarifkm = new TarifKm(10);
+        TarifKm tarifkm = new TarifKm(10);
 
         // output 1000
         System.out.println(wagon1.getTarif(tariffixe));
@@ -26,5 +26,12 @@ public class AppTransports {
 
         // output 10 * 249 = 2490
         System.out.println(wagon1.getTarif(tarifkm));
+
+
+
+        Tarif tarifmin = new TarifMinKmPoids(tarifpoids,tarifkm);
+
+        // output 1650 car 1650 < 2490
+        System.out.println("Tarifmin =" + wagon1.getTarif(tarifmin));
     }
 }
