@@ -1,6 +1,7 @@
 package fr.umontpellier.iut.Ex2;
 
 import java.util.ArrayList;
+import java.util.PriorityQueue;
 
 public class AppTransports {
 
@@ -17,5 +18,8 @@ public class AppTransports {
         train.add(wagon4);
 
         System.out.println(train);
+
+        PriorityQueue<Wagon> assemblagetrain = new PriorityQueue<>(new WagonComparatorDistance());
+        assemblagetrain.addAll(train);
     }
 }
