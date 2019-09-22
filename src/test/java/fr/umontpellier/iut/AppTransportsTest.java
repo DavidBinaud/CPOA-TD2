@@ -1,5 +1,6 @@
 package fr.umontpellier.iut;
 
+import fr.umontpellier.iut.Ex1.AppTransports;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
