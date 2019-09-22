@@ -21,5 +21,7 @@ public class AppTransports {
 
         PriorityQueue<Wagon> assemblagetrain = new PriorityQueue<>(new WagonComparatorDistance());
         assemblagetrain.addAll(train);
+
+        while(!assemblagetrain.isEmpty()) System.out.println(assemblagetrain.poll());
     }
 }
