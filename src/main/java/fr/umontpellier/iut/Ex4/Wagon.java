@@ -30,4 +30,8 @@ public class Wagon {
     public int getDistance(){
         return GestionDistances.getDistances(destination);
     }
+
+    public double getTarif(Tarif t){
+        return t.getPrix(this);
+    }
 }
